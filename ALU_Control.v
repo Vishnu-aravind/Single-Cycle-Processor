@@ -4,13 +4,14 @@ module ALU_Control(ALUOp,func7,func3,ALUControl_out);
     input [14:12] func3;
     output reg [3:0] ALUControl_out;
 always@(*) begin
-    case ({ALUOp,func7,func3})
+    casez ({ALUOp,func7,func3})
         6'b00_0_000 : ALUControl_out <= 4'b0010;
         6'b01_0_000 : ALUControl_out <= 4'b0110;
         6'b10_0_000 : ALUControl_out <= 4'b0010;
         6'b10_1_000 : ALUControl_out <= 4'b0110;
         6'b10_0_111 : ALUControl_out <= 4'b0000;
         6'b10_0_110 : ALUControl_out <= 4'b0001;
+        6'b00_z_zzz : ALUControl_out <= 4'b0010;
         default     : ALUControl_out <= 4'b0000;
     endcase
 end

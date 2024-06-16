@@ -1,50 +1,46 @@
-`timescale 0.1ns/1ps
 module testbench();
 reg clk;
 architecture arch(clk);
 
 initial begin
     
-    #100 clk = 0;
-    #100 clk = 1;
-    #100 clk = 0;
-    #100 clk = 1;
-    #100 clk = 0;
-    #100 clk = 1;
-    #100 clk = 0;
-    #100 clk = 1;
-    #100 clk = 0;
-    #100 clk = 1;
-    #100 clk = 0;
-    #100 clk = 1;
-    #100 clk = 0;
-    #100 clk = 1;
-    #100 clk = 0;
-    #100 clk = 1;
-    #100 clk = 0;
-    #100 clk = 1;
-    #100 clk = 0;
-    #100 clk = 1;
-    #100 clk = 0;
-    #100 clk = 1;
-    #100 clk = 0;
-    #100 clk = 1;
-    #100 clk = 0;
-    #100 clk = 1;
-    #100 clk = 0;
-    #100 clk = 1;
-    #100 clk = 0;
-    #100 clk = 1;
-    #100 clk = 0;
-    #100 clk = 1;
-    #100 clk = 0;
-    #100 clk = 1;
-    #100 clk = 0;
-    #100 clk = 1;
-  
-  
-    
-    
+    #5 clk = 0;
+    #5 clk = 1;  //1
+    #5 clk = 0;
+    #5 clk = 1;  //2
+    #5 clk = 0;
+    #5 clk = 1;  //3
+    #5 clk = 0;
+    #5 clk = 1;  //4
+    #5 clk = 0;
+    #5 clk = 1;  //5
+    #5 clk = 0;
+    #5 clk = 1;  //6
+    #5 clk = 0;
+    #5 clk = 1;  //7
+    #5 clk = 0;
+    #5 clk = 1;  //8
+    #5 clk = 0;
+    #5 clk = 1;  //9
+    #5 clk = 0;
+    #5 clk = 1;  //10
+    #5 clk = 0;
+    #5 clk = 1;  //11
+    #5 clk = 0;
+    #5 clk = 1;  //12
+    #5 clk = 0;
+    #5 clk = 1;  //13
+    #5 clk = 0;
+    #5 clk = 1;  //14
+    #5 clk = 0;
+    #5 clk = 1;  //15
+    #5 clk = 0;
+    #5 clk = 1;  //16
+    #5 clk = 0;
+    #5 clk = 1;  //17 
+
+
+   
 
     
 end

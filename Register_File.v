@@ -35,13 +35,14 @@ initial begin
     reg_file[27] = 32'b1;
     reg_file[28] = 32'b1;
     reg_file[29] = 32'b1;
-    reg_file[30] = 32'b1;
+    reg_file[30] = 32'd2;
     reg_file[31] = 32'b1;
 end
 always@(*) begin
-        if(RegWrite == 1'b1) begin
-            reg_file[Rd] = Write_data;
-        end
+        case(RegWrite) 
+            1'b1 : reg_file[Rd] <= Write_data;
+            default : reg_file[Rd] <= 32'b0;
+        endcase
 end
 assign Read_data1 = reg_file[Rs1];
 assign Read_data2 = reg_file[Rs2];
