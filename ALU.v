@@ -9,6 +9,9 @@ always@(*) begin
     4'b0001: ALUResult <= A|B;
     4'b0010: ALUResult <= A+B;
     4'b0110: ALUResult <= A-B;
+    4'b1000: ALUResult <= A << B;
+    4'b1001: ALUResult <= A >> B;
+    4'b1011: ALUResult <= A >> B;
     default: ALUResult <= 0;
     endcase
 end
