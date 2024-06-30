@@ -6,9 +6,9 @@ initial begin
     
     #5 clk = 0;
     #5 clk = 1;  //1
-    #5 clk = 0; 
-    #5 clk = 1;  //2
     #5 clk = 0; /*
+    #5 clk = 1;  //2
+    #5 clk = 0; 
     #5 clk = 1;  //3
     #5 clk = 0; 
     #5 clk = 1;  //4
