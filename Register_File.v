@@ -9,8 +9,8 @@ initial begin
     reg_file[1] = 32'd1;
     reg_file[2] = 32'd2;
     reg_file[3] = 32'd3;
-    reg_file[4] = 32'd4;
-    reg_file[5] = 32'b1;
+    reg_file[4] = 32'd32;
+    reg_file[5] = 32'd5;
     reg_file[6] = 32'b1;
     reg_file[7] = 32'b1;
     reg_file[8] = 32'b1;
@@ -22,7 +22,7 @@ initial begin
     reg_file[14] = 32'b1;
     reg_file[15] = 32'b1;
     reg_file[16] = 32'b1;
-    reg_file[17] = 32'b1;
+    reg_file[17] = 32'd3;
     reg_file[18] = 32'b1;
     reg_file[19] = 32'b1;
     reg_file[20] = 32'b1;
@@ -34,9 +34,9 @@ initial begin
     reg_file[26] = 32'b1;
     reg_file[27] = 32'b1;
     reg_file[28] = 32'd2;
-    reg_file[29] = 32'd32;
+    reg_file[29] = 32'd5;
     reg_file[30] = 32'd2;
-    reg_file[31] = 32'b1;
+    reg_file[31] = 32'd44;
 end
 always@(*) begin
         case(RegWrite) 

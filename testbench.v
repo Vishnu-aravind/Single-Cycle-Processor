@@ -6,11 +6,11 @@ initial begin
     
     #5 clk = 0;
     #5 clk = 1;  //1
-    #5 clk = 0;
+    #5 clk = 0; 
     #5 clk = 1;  //2
-    #5 clk = 0;
+    #5 clk = 0; /*
     #5 clk = 1;  //3
-    #5 clk = 0;
+    #5 clk = 0; 
     #5 clk = 1;  //4
     #5 clk = 0;
     #5 clk = 1;  //5
@@ -33,20 +33,20 @@ initial begin
     #5 clk = 0;
     #5 clk = 1;  //14
     #5 clk = 0;
-    #5 clk = 1;  //15
-    #5 clk = 0;
+    #5 clk = 1;   //15
+    #5 clk = 0; 
     #5 clk = 1;  //16
-    #5 clk = 0;
+    #5 clk = 0; 
     #5 clk = 1;  //17 
-    #5 clk = 0;
+    #5 clk = 0; 
     #5 clk = 1;  //18
-    #5 clk = 0;
+    #5 clk = 0; 
     #5 clk = 1;  //19
-    #5 clk = 0;
+    #5 clk = 0; 
     #5 clk = 1;  //20
     #5 clk = 0;
     #5 clk = 1;  //21
-       
+       */
 end
 
 endmodule
